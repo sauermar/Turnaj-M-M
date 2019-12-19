@@ -45,8 +45,8 @@ def main():
         exit(1)
 
     try:
-        path = sys.argv[1].split('.py')
-        strategy_module, strategy_class_name = path[0].rsplit('.', 1)
+        path = sys.argv[1]
+        strategy_module, strategy_class_name = path.rsplit('.', 1)
         strategy1 = importlib.import_module(strategy_module)
     except IOError:
         print('An error occurred trying to read the file.')
