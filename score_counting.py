@@ -2,15 +2,15 @@ from player import Move, Player
 
 
 class ScoreCounting(Player):
-    """ScoreCounting player.
+    """Hráč počítající skóre.
 
-    Start with cooperate.
-    In following turns, chooses cooperate if he has score greater or equal to his opponent's.
-    Otherwise chooses betray.
+    Začne kooperací.
+    V dalších tazích kooperuje, pokud v aktuálním souboji získal aspoň tolik bodů, jako protihráč.
+    Jinak je zrádce (strategie B)
     """
 
     def __init__(self):
-        """We remember our overall scores."""
+        """Pamatujeme si, kolik už kdo získal bodů."""
         self.my_score = 0
         self.opponent_score = 0
 
@@ -18,13 +18,13 @@ class ScoreCounting(Player):
         return "Honza"
 
     def next_move(self):
-        """Choose betrayal if you are loosing. Otherwise cooperate."""
+        """Zradíme, pokud prohráváme; jinak kooperujeme."""
         if self.my_score < self.opponent_score:
             return Move.betray
         else:
             return Move.cooperate
 
     def reward(self, result):
-        """Add score from the last round to overall scores."""
+        """Připočteme právě získané body do celkového skóre"""
         self.my_score += result.get_my_score()
         self.opponent_score += result.get_opp_score()
