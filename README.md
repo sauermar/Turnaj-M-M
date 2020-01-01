@@ -5,7 +5,7 @@ Turnaj byl zadaný v čísle [26.3](https://mam.mff.cuni.cz/media/cislo/pdf/26/2
 
 ## Shrnutí použití
 
-- `player.py` specifikuje rozhraní hráče `Player`. Vzorové programy `mirror.py`, `always_cooperate.py`, `unforgiving.py, `score_counting.py` a `always_deceive.py` jej implementují (a dědí).
+- `player.py` specifikuje rozhraní hráče `Player`. Vzorové programy `mirror.py`, `always_cooperate.py`, `unforgiving.py`, `score_counting.py` a `always_deceive.py` jej implementují (a dědí).
 	+ `Player` obsahuje tři metody: `author_name` (jen vrací celé jméno autora hráče), `next_move` (vrací následující tah, který má umělý hráč hrát) a `reward` (umožňuje zpracování právě proběhlého kola)
 	+ Zároveň je v tomto souboru definován výčet možných tahů `Move`
 - `result.py` definuje třídu `Result`, která popisuje jedno kolo (tedy dvojici vlastního a soupeřova tahu a zisky z této dvojice plynoucí)
@@ -50,3 +50,18 @@ THE GAME HAS ENDED
 You scored in total 26 points.
 AI player scored in total 10 points.
 ```
+## FAQ
+Q: Pro koho je turnaj určený? Můžu se zúčastnit?
+A: Do turnaje se může zapojit každý, nejen řešitelé M&M. Ano, můžeš se zúčastnit i Ty!
+ 
+Q: Můžu odevzdat více strategií?
+A: Každý řešitel smí odevzdat pouze jednu strategii. Pokud jich pošleš více, do turnaje bude použita poslední odevzdaná.
+ 
+Q: Je termín odevzdání 06. 02. 2019?
+A: Ano. Tento deadline je striktní. V pátek 07. 02. 2019 hned ráno spustíme turnaj, abychom výsledky stihli otisknout ve 4. čísle M&M.
+ 
+Q: Některé strategie mohou obsahovat náhodu. Bude to v turnaji nějak zohledněno, například průměrováním výsledků z více soubojů?
+A: V našem prvním turnaji budeme spouštět každý souboj pouze jednou. Pokud se Tvá strategie chová náhodně, bude nejspíš i Tvůj bodový výsledek poměrně dost náhodný.
+
+Q: Nakolik je možné importovat externí knihovny?
+A: Kolik budeš potřebovat.
