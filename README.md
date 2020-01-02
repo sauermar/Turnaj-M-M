@@ -51,17 +51,17 @@ You scored in total 26 points.
 AI player scored in total 10 points.
 ```
 ## FAQ
-Q: Pro koho je turnaj určený? Můžu se zúčastnit?
+Q: Pro koho je turnaj určený? Můžu se zúčastnit?\
 A: Do turnaje se může zapojit každý, nejen řešitelé M&M. Ano, můžeš se zúčastnit i Ty!
  
-Q: Můžu odevzdat více strategií?
+Q: Můžu odevzdat více strategií?\
 A: Každý řešitel smí odevzdat pouze jednu strategii. Pokud jich pošleš více, do turnaje bude použita poslední odevzdaná.
  
-Q: Je termín odevzdání 06. 02. 2019?
+Q: Je termín odevzdání 06. 02. 2019?\
 A: Ano. Tento deadline je striktní. V pátek 07. 02. 2019 hned ráno spustíme turnaj, abychom výsledky stihli otisknout ve 4. čísle M&M.
  
-Q: Některé strategie mohou obsahovat náhodu. Bude to v turnaji nějak zohledněno, například průměrováním výsledků z více soubojů?
+Q: Některé strategie mohou obsahovat náhodu. Bude to v turnaji nějak zohledněno, například průměrováním výsledků z více soubojů?\
 A: V našem prvním turnaji budeme spouštět každý souboj pouze jednou. Pokud se Tvá strategie chová náhodně, bude nejspíš i Tvůj bodový výsledek poměrně dost náhodný.
 
-Q: Nakolik je možné importovat externí knihovny?
+Q: Nakolik je možné importovat externí knihovny?\
 A: Kolik budeš potřebovat.
