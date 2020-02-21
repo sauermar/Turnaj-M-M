@@ -1,0 +1,38 @@
+Turnaj se bude opakovat približne každé dva týdny.
+
+!Kdo neuvede jinak, bude se úcastnit druhého turnaje se stejným skriptem, jaký použil pro první turnaj.!
+
+
+1) Urcení, které strategie budou vpouštené do turnaje
+
+Do každého turnaje bude zarazeno 19 defaultních skriptu 
+- pro každou podmnožinu strategií krome prázdné množiny jeden, tj. 4 skripty Always_X (opakují stále stejnou strategii), 6 skriptu Random_XY (náhodne vybírají ze dvou strategií), 4 skripty Random_XYZ (náhodne vybírají ze trech strategií), 1 skript RandomABCD (náhodne vybírá ze všech ctyr strategií) - celkem tedy 15 skriptu, které vubec nereagují na tah protihráce
+- dále 4 skripty TitForTat (pro každou strategii do prvního kola jeden) - ty v prvním kole použijí predem danou strategii a ve všech dalších kolech opakují predchozí strategii protihráce
+
+A to nejduležitejší: 3 instance od každého úcastnického skriptu (at už odevzdaného rešitelem M&M, nebo jiným soutežícím). Poradí úcastníku pak vytvoríme tak, že vezmeme pro každého úcastníka medián z finálního skóre jeho trí instancí.
+
+
+2) Pocet kol v každém souboji
+
+Každý turnaj bude mít jiný pocet kol v soubojích (ale všechny souboje v rámci jednoho turnaje budou na stejný pocet kol, samozrejme). Bude se jednat o císlo v rozmezí 10 až 1000. Presné císlo se nikdy nedozvíte predem, abyste nemohli optimalizovat na plánované ukoncení spolupráce. Stejne tak budeme kontrolovat vaše skripty, že si pocet kol ze souboju nikam "nepoznacují" pro použití v príštím souboji stejného turnaje.
+
+
+3) Body do M&M
+
+1. místo: 2.0 bodu
+2. místo: 1.4 bodu
+3. místo: 1.0 bodu
+4. místo: 0.7 bodu
+5. místo: 0.5 bodu
+6. místo: 0.3 bodu
+7. místo: 0.2 bodu
+jakékoliv další místo: 0.1 bodu
+
+Jedná se o prevod poradí mezi rešiteli M&M na bodovou hodnotu do M&M, tj. nepocítají se do poradí defaultní skripty ani skripty odevzdané ostatními úcastníky turnaje (tj. kterí nejsou rešiteli M&M). První turnaj byl za hodne bodu. Od druhého turnaje se budeme rídit výše uvedenou tabulkou. Záverecný turnaj (nejspíš tj. 8. turnaj) pak to tato tabulka prenásobená tremi.
+
+
+4) Zverejnení prubehu každé interakce
+
+Po probehnutí každého turnaje dostanete podrobné Results.txt, ve kterém budou vypsané prubehy všech souboju nejak takhle ...
+První Hrác:  CCDACADCADCCABBBBBBB
+Druhý Hrác: CCCBCCAAAAAADAAAAAAA
