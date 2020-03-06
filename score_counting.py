@@ -6,18 +6,18 @@ class ScoreCounting(Player):
     Začne kooperací.
     V dalších tazích kooperuje, pokud v aktuálním souboji získal aspoň tolik bodů, jako protihráč.
     Jinak je zrádce (strategie B)
-	
-	Score-counting player.
-	Start with cooperate.
+    
+    Score-counting player.
+    Start with cooperate.
     In following turns, chooses cooperate if he has score greater or equal to his opponent's.
     Otherwise chooses betray.
     """
 
     def __init__(self):
         """Pamatujeme si, kolik už kdo získal bodů.
-		
-		We remember our overall scores.
-		"""
+        
+        We remember our overall scores.
+        """
         self.my_score = 0
         self.opponent_score = 0
 
@@ -26,9 +26,9 @@ class ScoreCounting(Player):
 
     def next_move(self):
         """Zradíme, pokud prohráváme; jinak kooperujeme.
-		
-		Choose betrayal if you are loosing. Otherwise cooperate.
-		"""
+        
+        Choose betrayal if you are loosing. Otherwise cooperate.
+        """
         if self.my_score < self.opponent_score:
             return Move.betray
         else:
@@ -36,8 +36,8 @@ class ScoreCounting(Player):
 
     def reward(self, result):
         """Připočteme právě získané body do celkového skóre.
-		
-		Add score from the last round to overall scores.
-		"""
+        
+        Add score from the last round to overall scores.
+        """
         self.my_score += result.get_my_score()
         self.opponent_score += result.get_opp_score()
