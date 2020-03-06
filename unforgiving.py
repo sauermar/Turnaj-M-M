@@ -5,8 +5,8 @@ class Unforgiving(Player):
     """Neodpouštějící hráč.
     Dokud nebyl zrazen (strategie B), kooperuje.
     Když je zrazen, stane se z něj neodpouštějící zrádce.
-	
-	Unforgiving player.
+    
+    Unforgiving player.
     Until he has been betrayed, always cooperates.
     As soon as he is betrayed, he betrays back and never forgives.
     """
@@ -14,8 +14,8 @@ class Unforgiving(Player):
     def __init__(self):
       
         """Zapamatujeme si, jestli nás už soupeř zradil.
-		
-		We remember whether the opponent ever betrayed us."""
+        
+        We remember whether the opponent ever betrayed us."""
         
         self.was_betrayed = False
 
@@ -24,9 +24,9 @@ class Unforgiving(Player):
 
     def next_move(self):
         """Zradíme, pokud jsme již byli zrazeni. Jinak kooperujeme.
-		
-		Cooperate unless you were betrayed in the past. Otherwise betray.
-		"""
+        
+        Cooperate unless you were betrayed in the past. Otherwise betray.
+        """
         
         if self.was_betrayed:
             return Move.betray
@@ -35,9 +35,9 @@ class Unforgiving(Player):
 
     def reward(self, result):
         """Zapamatujeme si, pokud nás protihráč zradil.
-		
-		If opponent ever betrays us, we remember that.
-		"""
+        
+        If opponent ever betrays us, we remember that.
+        """
         
         if result.opp_move == Move.betray:
             self.was_betrayed = True
