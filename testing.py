@@ -8,7 +8,6 @@ from result import Result
 
 def pick_next() -> Move:
     """Ptáme se uživatele, co chce zahrát.
-
     Ptáme se ho tak dlouho, dokud nevybere nějaké písmenko strategie, které je uvedeno ve výčtu Move v player.py"""
     while True:
         pick = input("Pick your next move: ")
