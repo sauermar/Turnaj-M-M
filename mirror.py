@@ -4,7 +4,8 @@ from player import Move, Player
 
 
 class Mirror(Player):
-    """Hráč "Zrcadlo".
+    """
+    Hráč "Zrcadlo".
     Začne kooperující strategií (C).
     V dalších tazích vybírá náhodně jednu z posledních tří strategií protihráče.
     
@@ -14,7 +15,8 @@ class Mirror(Player):
     """
 
     def __init__(self):
-        """Budeme si pamatovat všechny soupeřovy tahy v poli.
+        """
+        Budeme si pamatovat všechny soupeřovy tahy v poli.
         
         We remember all our opponent moves.
         """
@@ -24,7 +26,8 @@ class Mirror(Player):
         return "Honza"
 
     def next_move(self):
-        """Vybere náhodně jednu z posl. tří tahů protihráče.
+        """
+        Vybere náhodně jednu z posl. tří tahů protihráče.
         
         Choose randomly one of last 3 moves our opponent made.
         """
@@ -35,7 +38,8 @@ class Mirror(Player):
             return random.choice(last_moves)
 
     def reward(self, result):
-        """Zaznamená proběhlý tah do pole.
+        """
+        Zaznamená proběhlý tah do pole.
         
         Records the history of the game.
         """
