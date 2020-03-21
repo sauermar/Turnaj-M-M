@@ -7,8 +7,10 @@ from result import Result
 
 
 def pick_next() -> Move:
-    """Ptáme se uživatele, co chce zahrát.
-    Ptáme se ho tak dlouho, dokud nevybere nějaké písmenko strategie, které je uvedeno ve výčtu Move v player.py"""
+    """
+    Ptáme se uživatele, co chce zahrát.
+    Ptáme se ho tak dlouho, dokud nevybere nějaké písmenko strategie, které je uvedeno ve výčtu Move v player.py
+    """
     while True:
         pick = input("Pick your next move: ")
         for m in Move:
@@ -19,8 +21,8 @@ def pick_next() -> Move:
 
 
 def print_result(res: Result, sc1: int, sc2: int):
-    """Vypíše výsledek tahu.
-
+    """
+    Vypíše výsledek tahu.
     Parametry sc1 a sc2 jsou celková skóre od začátku turnaje, parametr res je poslední výsledek.
     """
     print("Your move was: {}".format(res.opp_move.value[0]))
