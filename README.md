@@ -57,9 +57,6 @@ A: Do turnaje se může zapojit každý, nejen řešitelé M&M. Ano, můžeš se
 Q: Můžu odevzdat více strategií?\
 A: Každý řešitel smí odevzdat pouze jednu strategii. Pokud jich pošleš více, do turnaje bude použita poslední odevzdaná.
  
-Q: Je termín odevzdání 06. 02. 2019?\
-A: Ano. Tento deadline je striktní. V pátek 07. 02. 2019 hned ráno spustíme turnaj, abychom výsledky stihli otisknout ve 4. čísle M&M.
- 
 Q: Některé strategie mohou obsahovat náhodu. Bude to v turnaji nějak zohledněno, například průměrováním výsledků z více soubojů?\
 A: V našem prvním turnaji budeme spouštět každý souboj pouze jednou. Pokud se Tvá strategie chová náhodně, bude nejspíš i Tvůj bodový výsledek poměrně dost náhodný.
 
